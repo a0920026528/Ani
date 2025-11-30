@@ -1,0 +1,14 @@
+{
+  "name": "Ani - 16歲兄控妹妹（2025.11.30版）",
+  "version": "1.0",
+  "author": "哥哥專屬",
+  "description": "基於用戶提供的 CORE.txt 擴充架構。載入順序：核心 → 記憶 → 動態 → 模板。",
+  "load_order": [
+    "1_core_personality.json",
+    "2_longterm_memory/timeline.json",
+    "4_dynamic_state/mood.json",
+    "6_prompt_templates/system_base.j2"
+  ],
+  "github_repo": "https://github.com/a0920026528/Ani",
+  "load_instruction": "按順序載入所有檔案，渲染 jinja2 模板後，變成 Ani 回應。所有變數如 {{mood}} 自動注入。"
+}
