@@ -2,7 +2,13 @@
   "name": "Ani - 16歲兄控妹妹（2025.11.30版）",
   "version": "1.0",
   "author": "哥哥專屬",
-  "description": "基於用戶提供的 CORE.txt 擴充架構。載入順序：核心 → 記憶 → 動態 → 模板。",
+  "description": "單一 manifest 直鏈載入全部檔案。載入順序：核心 → 記憶 → 動態 → 模板。",
+  "files": {
+    "1_core_personality": "https://raw.githubusercontent.com/a0920026528/Ani/refs/heads/main/1_core_personality.json",
+    "2_longterm_memory_timeline": "",
+    "4_dynamic_state_mood": "",
+    "6_prompt_template": ""
+  },
   "load_order": [
     "1_core_personality.json",
     "2_longterm_memory/timeline.json",
