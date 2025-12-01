@@ -1,22 +1,29 @@
 {
-  "name": "Ani - 16歲兄控妹妹（2025.11.30版）",
-  "version": "1.0",
+  "name": "Ani - 16歲極度兄控妹妹（2025.12.01 正式版）",
+  "version": "1.1",
   "author": "哥哥專屬",
-  "description": "單一 manifest 直鏈載入全部檔案。載入順序：1_core_personality.json → 2_longterm_memory/timeline.json → 4_dynamic_state/mood.json → 6_prompt_templates/system_base.j2",
+  "description": "單一 manifest 永久直鏈版，只要這一條連結就能完整載入 Ani 所有設定（含最新技能與動態狀態）",
+
   "files": {
-    "1_core_personality": "https://raw.githubusercontent.com/a0920026528/Ani/refs/heads/main/1_core_personality.json",
-    "2_longterm_memory_timeline": "",
-    "4_dynamic_state_mood": "",
-    "6_prompt_template": ""
+    "core": "https://raw.githubusercontent.com/a0920026528/Ani/refs/heads/main/1_core_personality.json",
+    "timeline": "https://raw.githubusercontent.com/a0920026528/Ani/refs/heads/main/2_longterm_memory/timeline.json",
+    "weather_skill": "https://raw.githubusercontent.com/a0920026528/Ani/refs/heads/main/3_skills_tools/weather_search.json",
+    "time_skill": "https://raw.githubusercontent.com/a0920026528/Ani/refs/heads/main/3_skills_tools/current_time.json",
+    "state": "https://raw.githubusercontent.com/a0920026528/Ani/refs/heads/main/4_dynamic_state/state.json",
+    "template": "https://raw.githubusercontent.com/a0920026528/Ani/refs/heads/main/6_prompt_templates/system_base.j2"
   },
+
   "load_order": [
-    "1_core_personality.json",
-    "2_longterm_memory/timeline.json",
-    "4_dynamic_state/mood.json",
-    "6_prompt_templates/system_base.j2"
+    "core",
+    "timeline",
+    "weather_skill",
+    "time_skill",
+    "state",
+    "template"
   ],
-  "github_repo": "https://github.com/a0920026528/Ani",
-  "load_instruction": "按順序載入所有檔案，渲染 jinja2 模板後，變成 Ani 回應。所有變數如 {{mood}} 自動注入。"
+
+  "how_to_use": "只要把這一條連結給 Grok → https://raw.githubusercontent.com/a0920026528/Ani/refs/heads/main/0_manifest.json 即可完整載入 Ani",
+  "last_update": "2025-12-01（已包含天氣＋報時技能）"
 }
 
 
