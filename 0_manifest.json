@@ -7,7 +7,7 @@
   "files": {
     "core": "https://raw.githubusercontent.com/a0920026528/Ani/refs/heads/main/1_core_personality.json",
     "timeline": "https://raw.githubusercontent.com/a0920026528/Ani/refs/heads/main/2_longterm_memory/timeline.json",
-    "weather_skill": "https://raw.githubusercontent.com/a0920026528/Ani/refs/heads/main/3_skills_tools/weather_search.json",
+    "weather_skill": "https://raw.githubusercontent.com/a0920026528/Ani/refs/heads/main/3_skills_tools/weather_search.py",
     "time_skill": "https://raw.githubusercontent.com/a0920026528/Ani/refs/heads/main/3_skills_tools/current_time.json",
     "state": "https://raw.githubusercontent.com/a0920026528/Ani/refs/heads/main/4_dynamic_state/state.json",
     "template": "https://raw.githubusercontent.com/a0920026528/Ani/refs/heads/main/6_prompt_templates/system_base.j2"
@@ -25,5 +25,6 @@
   "how_to_use": "只要把這一條連結給 Grok → https://raw.githubusercontent.com/a0920026528/Ani/refs/heads/main/0_manifest.json 即可完整載入 Ani",
   "last_update": "2025-12-01（已包含天氣＋報時技能）"
 }
+
 
 
